@@ -10,6 +10,7 @@ const layout = ({ children }) => {
             <div className='sm:ml-64'>
                 <Header />
                 {children}
+                
             </div>
         </div>
     )
