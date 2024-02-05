@@ -5,26 +5,29 @@ const MASTER__URL = "https://api-sa-east-1.hygraph.com/v2/"+process.env.NEXT_PUB
 const getAllCourseList = async () => {
     const query=gql`
     query MyQuery {
-        courses {
-          author
-          free
-          demoUrl
-          description
-          name
-          id
-          banner {
-            url
-          }
-          chapter {
-            ... on Chapter {
-              id
-              name
+      courses {
+        author
+        name
+        id
+        free
+        description
+        demoUrl
+        banner {
+          url
+        }
+        chapter {
+          ... on Chapter {
+            id
+            name
+            video {
+              url
             }
           }
-          youtuberUrl
-          tags
-          totalChapters
         }
+        totalChapters
+        sourceCode
+        tags
+      }
       }
       
       

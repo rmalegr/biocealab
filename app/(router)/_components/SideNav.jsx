@@ -33,7 +33,7 @@ const SideNav = () => {
                 <div  className='group flex gap-3 mt-1 p-3 text-[18px] 
                 items-center text-gray-500 cursor-pointer hover:bg-primary hover:text-white rounded-md transition-all 
                 ease-in-out duration-200' key={item.id}>
-                    <item.icon className='group-hover:animate-bounce'/>
+                    <item.icon className='group-hover:animate-spin'/>
                     <h2>{item.name}</h2>
                 </div>
                 ))}
