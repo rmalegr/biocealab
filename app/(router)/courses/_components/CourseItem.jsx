@@ -3,8 +3,7 @@ import Image from "next/image";
 
 const CourseItem = ({ course }) => {
   return (
-    <div className="border rounded-xl hover:shadow-md
-   hover:shadow-purple-300 cursor-pointer
+    <div className="border rounded-xl hover:shadow-md hover:shadow-blue-700 cursor-pointer
     ">
       <Image
         src={course?.banner?.url}
@@ -24,7 +23,7 @@ const CourseItem = ({ course }) => {
         ) : (
           <div className="flex gap-2">
             <Image src="/capitulo.png" width={20} height={20} alt="capitulo" />
-            <h2 className="text-[14px] text-gray-400">Cahpters</h2>
+            <h2 className="text-[14px] text-gray-400">Lecciones</h2>
           </div>
         )}
 

@@ -4,8 +4,8 @@ const MASTER__URL = "https://api-sa-east-1.hygraph.com/v2/"+process.env.NEXT_PUB
 
 const getAllCourseList = async () => {
     const query=gql`
-    query MyQuery {
-      courses {
+    query MyQuery  {
+      courses (first: 10, orderBy: createdAt_ASC) {
         author
         name
         id
