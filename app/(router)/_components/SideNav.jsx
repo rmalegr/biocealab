@@ -48,7 +48,7 @@ const SideNav = () => {
               className={`group flex gap-3 mt-1 p-3 text-[18px] 
                 items-center text-gray-500 cursor-pointer hover:bg-primary
                  hover:text-white rounded-md transition-all 
-                ease-in-out duration-200 ${path.includes(item.path)&&'bg-cyan-600 text-white'}`}
+                ease-in-out duration-200 ${path.includes(item.path)&&'bg-blue-700 text-white'}`}
               key={item.id}
             >
               <item.icon className="group-hover:animate-spin" />

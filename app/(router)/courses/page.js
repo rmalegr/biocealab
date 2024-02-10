@@ -2,6 +2,7 @@
 import React from 'react'
 import WelcomeBanner from './_components/WecomeBanner'
 import CourseList from './_components/CourseList'
+import SideBanner from './_components/SideBanner'
 
 const Courses = () => {
   return (
@@ -17,8 +18,8 @@ const Courses = () => {
 
       </div>
       {/* rigth container */}
-      <div className=''>
-        Right Section
+      <div className='mt-4'>
+        <SideBanner></SideBanner>
       </div>
     </div>
   )
